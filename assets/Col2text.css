@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.twoColLiqLtHdr #container {width:1000px; background:#FFF; border:0 solid #F1F1F1; text-align:left; margin:0 auto;
+}
+.twoColLiqLtHdr #header {background:#FFF; padding:0 10px;
+}
+.twoColLiqLtHdr #header h1 {margin:0; padding:0;
+}
+.twoColLiqLtHdr #sidebar1 {float:left; width:175px; background:#FFF; padding:0 10px; display:inline; overflow:hidden;
+}
+.twoColLiqLtHdr #sidebar1 h3,.twoColLiqLtHdr #sidebar1 p {margin-left:0; margin-right:0;
+}
+.twoColLiqLtHdr #mainContent {padding-right:10px; margin:0 0 0 20%;
+}
+.twoColLiqLtHdr #footer {background:#DDD; padding:0 10px;
+}
+.twoColLiqLtHdr #footer p {margin:0; padding:10px 0;
+}
+.fltrt {float:right; margin-left:8px;
+}
+.fltlft {float:left; margin-right:8px;
+}
+.clearfloat {clear:both; height:0; font-size:1px; line-height:0;
+}
+
+

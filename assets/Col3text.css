@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.thrColLiqHdr #container { width:1000px; background:#FFF; margin:0 auto; border:0px solid #F1F1F1; text-align:left }
+.thrColLiqHdr #header { background:#FFF; padding:0 10px }
+.thrColLiqHdr #header h1 { margin:0; padding:10px 0 }
+.thrColLiqHdr #sidebar1 { float:left; width:175px; background:#FFF; padding:0px 10px; display:inline; overflow:hidden}
+.thrColLiqHdr #sidebar2 { float:right; width:175px; background:#FFF; padding:0px 10px; display:inline; overflow:hidden}
+.thrColLiqHdr #sidebar1 p, .thrColLiqHdr #sidebar1 h3, .thrColLiqHdr #sidebar2 p, .thrColLiqHdr #sidebar2 h3 { margin-left:0px; margin-right:0px }
+.thrColLiqHdr #mainContent { margin:0 20% 0 20%; overflow:hidden}
+.thrColLiqHdr #footer { padding:0 10px; background:#DDD }
+.thrColLiqHdr #footer p { margin:0; padding:10px 0 }
+.fltrt { float:right; margin-left:8px }
+.fltlft { float:left; margin-right:8px }
+.clearfloat { clear:both; height:0; font-size:1px; line-height:0px }
+#mainContent {width:600px;padding:0px}
+#header{width:980px}
