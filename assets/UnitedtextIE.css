@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* place css fixes for all versions of IE in this conditional comment */
+.thrColFixHdr #sidebar2, .thrColFixHdr #sidebar1 { padding-top: 30px; }
+.thrColFixHdr #mainContent {padding-top: 15px; }
+#mainContent, #sidebar1 { zoom: 1;}
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+
+.item {margin: 5px; padding: 10px;}
+
+/*.divcontentbestsellerblue li, .divcontentbestseller li{ height:26px; padding-top:2px} */
+
+/*h2#productm { height:4px; padding-bottom: 17px; }*/
+#ulproduct222 h2{ font-size:14px; }
+
+#formWrap {float:none }
+html, body {text-align: center;
+}
+p {text-align: left;}
+

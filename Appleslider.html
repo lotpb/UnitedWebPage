@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+    <style type="text/css" media="screen">
+    <!--
+        body {
+            padding: 0; 
+            font: 1em "Trebuchet MS", verdana, arial, sans-serif; 
+            font-size: 100%;
+            background-color: #212121;
+            margin: 0;
+        }
+
+        h1 { 
+            margin-bottom: 2px; 
+        }
+
+        #container {
+            background-color: #fff;
+            width: 580px;
+            margin: 15px auto;
+            padding: 50px;
+        }
+        
+        /* slider specific CSS */
+        .sliderGallery {
+            background: url(images/productbrowser_background_20070622.jpg) no-repeat;
+            overflow: hidden;
+            position: relative;
+            padding: 10px;
+            height: 160px;
+            width: 560px;
+        }
+        
+        .sliderGallery UL {
+            position: absolute;
+            list-style: none;
+            overflow: none;
+            white-space: nowrap;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sliderGallery UL LI {
+            display: inline;
+        }
+        
+        .slider {
+            width: 542px;
+            height: 17px;
+            margin-top: 140px;
+            margin-left: 5px;
+            padding: 1px;
+            position: relative;
+            background: url(images/productbrowser_scrollbar_20070622.png) no-repeat;
+        }
+        
+        .handle {
+            position: absolute;
+            cursor: move;
+            height: 17px;
+            width: 181px;
+            top: 0;
+            background: url(images/productbrowser_scroller_20080115.png) no-repeat;
+            z-index: 100;
+        }
+        
+        .slider span {
+            color: #bbb;
+            font-size: 80%;
+            cursor: pointer;
+            position: absolute;
+            z-index: 110;
+            top: 3px;
+        }
+        
+        .slider .slider-lbl1 {
+            left: 50px;
+        }
+        
+        .slider .slider-lbl2 {
+            left: 107px;
+        }
+        
+        .slider .slider-lbl3 {
+            left: 198px;
+        }
+
+        .slider .slider-lbl4 {
+            left: 320px;
+        }
+
+        .slider .slider-lbl5 {
+            left: 455px;
+        }
+		
+
+		
+		
+		
+		li{ padding-left:18px; padding-right:20px}
+		
+    -->
+    </style>
+
+    <script src="Scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="Scripts/jquery.dimensions.js" type="text/javascript" charset="utf-8"></script>
+    <script src="Scripts/ui.mouse.js" type="text/javascript" charset="utf-8"></script>
+    <script src="Scripts/ui.slider.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+        window.onload = function () {
+            var container = $('div.sliderGallery');
+            var ul = $('ul', container);
+            
+            var itemsWidth = ul.innerWidth() - container.outerWidth();
+            
+            $('.slider', container).slider({
+                minValue: 0,
+                maxValue: itemsWidth,
+                handle: '.handle',
+                stop: function (event, ui) {
+                    ul.animate({'left' : ui.value * -1}, 500);
+                },
+                slide: function (event, ui) {
+                    ul.css('left', ui.value * -1);
+                }
+            });
+        };
+    </script>
+    
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div class="sliderGallery">
+            <ul>
+                <li><img src="images/unitedwindowedit2.jpg" width="57" height="78"/></li>
+                <li><img src="images/UnitedAlsideWindow10.jpg" width="57" height="78" /></li>
+                <li><img src="images/unitedwindowedit1.jpg" width="57" height="78" /></li>
+                <li><img src="images/unitedwindowedit1.jpg" width="57" height="78" /></li>        
+                <li><img src="images/346-60.jpg" width="50" height="86" class="pb-macmini" /></li>
+                <li><img src="images/346-60.jpg" width="50" height="86" class="pb-macmini" /></li>
+                <li><img src="images/346-60.jpg" width="50" height="86" class="pb-macmini" /></li>
+                <li><img src="images/346-60.jpg" width="50" height="86" class="pb-macmini" /></li>
+                <li><img src="images/unitedwindowedit2.jpg" width="57" height="78"/></li>
+                <li><img src="images/UnitedAlsideWindow10.jpg" width="57" height="78" /></li>
+                <li><img src="images/unitedwindowedit1.jpg" width="57" height="78" /></li>
+                <li><img src="images/unitedwindowedit1.jpg" width="57" height="78" /></li>
+                <li><img src="images/346-60.jpg" width="50" height="86" class="pb-macmini" /></li>
+                <li><img src="images/346-60.jpg" width="50" height="86" class="pb-macmini" /></li>
+                <li><img src="images/346-60.jpg" width="50" height="86" class="pb-macmini" /></li>
+                <li><img src="images/346-60.jpg" width="50" height="86" class="pb-macmini" /></li>
+                         
+            </ul>
+            <div>
+            <div class="slider">
+                <div class="handle"></div>
+                <span class="slider-lbl1">Windows</span>
+                <span class="slider-lbl3">Doors</span>
+                <span class="slider-lbl4">Siding</span>
+                <span class="slider-lbl5">Roof</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

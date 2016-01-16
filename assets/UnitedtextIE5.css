@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* place css box model fixes for IE 5* in this conditional comment */
+.thrColFixHdr #sidebar1 { width: 180px; }
+.thrColFixHdr #sidebar2 { width: 190px; }
