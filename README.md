@@ -5,10 +5,7 @@ http://lotpb.github.io/UnitedWebPage/index.html
 
 
 <img src="http://lotpb.github.io/UnitedWebPage/index.html" alt="Sign Up" width="320" height="568"/>
-<img src="https://github.com/lotpb/iosSQL/blob/master/IMG_0078.jpg" alt="Products" width="320" height="568"/>
-<img src="https://github.com/lotpb/iosSQL/blob/master/IMG_0079.jpg" alt="Shopping Cart" width="320" height="568"/>
-<img src="https://github.com/lotpb/iosSQL/blob/master/IMG_0080.jpg" alt="Checkout" width="320" height="568"/>
-<img src="https://github.com/lotpb/iosSQL/blob/master/IMG_0081.jpg" alt="Checkout" width="320" height="568"/>
+
 
 ### Contributing
 
